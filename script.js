@@ -694,3 +694,12 @@ gui.close();
       $('.js-banner-suggest').fadeOut()
   }, 8000)
 }
+
+//function section in Javascript and Jquery...
+function myData() {
+  retrun;
+}
+
+function show() {
+  document.getElementById('anotherFunction').classList.toggle('Active');
+}
