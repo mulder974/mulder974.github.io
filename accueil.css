@@ -94,3 +94,15 @@ nav#menu.scrolled ul li {
 nav#menu.scrolled h1#sitename {
 	  opacity: 1;
 }
+
+
+/* CAROUSEL */
+/*
+
+*, ::after, ::before {
+    justify-content: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+*/
