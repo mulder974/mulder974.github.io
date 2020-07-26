@@ -1,156 +1,266 @@
 
 
-body{
-    height: 100vh;
-    width: 100vw;
-    background:radial-gradient(rgb(28, 11, 51) 10%, rgb(11, 2, 24) 45%);
+body {
+  margin: 0;
+  padding: 0;
+  background:radial-gradient(rgb(28, 11, 51) 10%, rgb(11, 2, 24) 45%);
 
-  /* Pour enlever la barre de Scroll*/    
   
-  }
-  html {
-      scrollbar-width: none; /* For Firefox */
-      -ms-overflow-style: none; /* For Internet Explorer and Edge */
-  }
-  html::-webkit-scrollbar {
-      width: 0px; /* For Chrome, Safari, and Opera */
-  }
-    
-  
-  
-  @font-face {
-    font-family: "ToneDeaf BB";
-    src: url("https://s.cdpn.io/6859/ToneDeafBB.eot?") format("eot"), url("https://s.cdpn.io/6859/ToneDeafBB.woff") format("woff"), url("https://s.cdpn.io/6859/ToneDeafBB.ttf") format("truetype"), url("fhttps://s.cdpn.io/6859/ToneDeafBB.svg#ToneDeafBB") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  .guitar-image-e {
-    position: absolute;
-    display: none;
-  }
-  .font-holder-e {
-    font-family: 'ToneDeaf BB';
-  }
-   
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-  
-  /* Bouttons fluos */
-  #relou{position: absolute;
-right: 425px}
-  
-  a{
-     position: relative;
-     left: 650px;
-     top: 450px;
-      display: inline-flex;
-      padding: 25px 30px;
-      margin: 10px 0;
-      color: #03e9f4;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: 0.5s;
-      letter-spacing: 4px;
-      overflow: hidden;
-      margin-right: 50px;
-     
-  }
-  a:hover{
-      background: #03e9f4;
-      color: #050801;
-      box-shadow: 0 0 5px #03e9f4,
-                  0 0 25px #03e9f4,
-                  0 0 50px #03e9f4,
-                  0 0 200px #03e9f4;
-       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-  }
-  a:nth-child(1){
-      filter: hue-rotate(270deg);
-  }
-  a:nth-child(2){
-      filter: hue-rotate(110deg);
-  }
-  a span{
-      position: absolute;
-      display: block;
-  }
-  a span:nth-child(1){
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg,transparent,#03e9f4);
-      animation: animate1 1s linear infinite;
-  }
-  @keyframes animate1{
-      0%{
-          left: -100%;
-      }
-      50%,100%{
-          left: 100%;
-      }
-  }
-  a span:nth-child(2){
-      top: -100%;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(180deg,transparent,#03e9f4);
-      animation: animate2 1s linear infinite;
-      animation-delay: 0.25s;
-  }
-  @keyframes animate2{
-      0%{
-          top: -100%;
-      }
-      50%,100%{
-          top: 100%;
-      }
-  }
-  a span:nth-child(3){
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(270deg,transparent,#03e9f4);
-      animation: animate3 1s linear infinite;
-      animation-delay: 0.50s;
-  }
-  @keyframes animate3{
-      0%{
-          right: -100%;
-      }
-      50%,100%{
-          right: 100%;
-      }
-  }
-  
-  
-  a span:nth-child(4){
-      bottom: -100%;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(360deg,transparent,#03e9f4);
-      animation: animate4 1s linear infinite;
-      animation-delay: 0.75s;
-  }
-  @keyframes animate4{
-      0%{
-          bottom: -100%;
-      }
-      50%,100%{
-          bottom: 100%;
-      }
-  }
-
-  #myCanvas{
-      position:absolute;
-      bottom : 100px;
-      height: 100%;
 }
+
+
+
+
+#contact {position:relative;
+  top:100px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font: 300 60px 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: rgb(95, 246, 246);
+  margin-bottom: 25px;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Begin Left Contact Page */
+.form-horizontal {
+  float: left;
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, textarea {
+  max-width: 400px;
+  background-color: #111;
+  color:  rgb(78, 160, 160);;
+  letter-spacing: 1px;
+  box-shadow : rgb(95, 246, 246);
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button {
+  width: 400px;
+  height: 34px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 300 14px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  -webkit-transform: translate3d(0px, -29px, 0px);
+          transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color:  rgb(95, 246, 246);
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: rgb(95, 246, 246);;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color:  rgb(95, 246, 246);;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color:  rgb(95, 246, 246);;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media-list li a {
+  color: rgb(177, 245, 245);;
+}
+
+.social-media-list li {
+  position: relative; 
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color : rgb(95, 246, 246);
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  -webkit-transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  -webkit-transform: scale(1.12);  
+          transform: scale(1.12);
+  -webkit-transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+          transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #111;
+}
+
+
+hr {
+  border-color:  rgb(95, 246, 246) ;
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+    #contact {
+        height: 1000px;
+    }
+  .section-header {
+    font-size: 65px;
+  }
+  .direct-contact-container, .form-horizontal {
+    float: none;
+    margin: 10px auto;
+  }  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  #contact {
+    height: 1200px;
+    }
+  .section-header{
+    font-size: 50px;
+  }
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
   
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+}
+
