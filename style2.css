@@ -11,6 +11,34 @@ body{
 
 /* Pour enlever la barre de Scroll*/    
 
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: rgba(95, 246, 246);
+}
+
+a:visited {
+  color: #rgba(95, 246, 24);
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #rgba(95, 246, 246)
+}
+
+a:hover {
+  border-bottom: 1px solid;     
+  background: #rgba(95, 246, 246)
+}
+
+a:active {
+  background: #rgba(95, 246, 246)
+  color: #rgba(95, 246, 246);
+}
 }
 html {
     scrollbar-width: none; /* For Firefox */
